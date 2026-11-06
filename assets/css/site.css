@@ -250,3 +250,7 @@ ul.plain{padding-left:1.1em;margin:0 0 14px}
 .note{background:linear-gradient(180deg,#E6F4F3,#EEF8F7)}
 .svc-list a{transition:background-color .15s}
 .site-header{box-shadow:0 1px 0 rgba(19,41,75,.04),0 6px 18px rgba(19,41,75,.05)}
+
+/* align menu buttons and links on the same baseline */
+.main-nav>ul{align-items:center}
+.main-nav>ul>li>a,.nav-btn{line-height:1.4;font-size:.97rem}
