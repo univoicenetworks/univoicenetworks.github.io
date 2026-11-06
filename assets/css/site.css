@@ -1,0 +1,70 @@
+/* Theme colour palette that Astra generated dynamically on WordPress */
+:root{
+  --ast-global-color-0:#046bd2;--ast-global-color-1:#045cb4;--ast-global-color-2:#1e293b;--ast-global-color-3:#334155;
+  --ast-global-color-4:#FFFFFF;--ast-global-color-5:#F0F5FA;--ast-global-color-6:#111111;--ast-global-color-7:#D1D5DB;--ast-global-color-8:#111111;
+  --e-global-color-astglobalcolor0:#046bd2;--e-global-color-astglobalcolor1:#045cb4;--e-global-color-astglobalcolor2:#1e293b;
+  --e-global-color-astglobalcolor3:#334155;--e-global-color-astglobalcolor4:#FFFFFF;--e-global-color-astglobalcolor5:#F0F5FA;
+  --e-global-color-astglobalcolor6:#111111;--e-global-color-astglobalcolor7:#D1D5DB;--e-global-color-astglobalcolor8:#111111;
+}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#334155;overflow-x:hidden}
+img{max-width:100%;height:auto}
+a{color:var(--ast-global-color-0)}
+#primary,.site-main{margin:0;padding:0!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* ---- Custom CSS from the WordPress customizer ---- */
+.bnrcd{top:0;left:0;width:100%;height:100%;border-bottom-left-radius:0;position:absolute}
+@media(min-width:1024px){.bnrcd{top:-40%;left:-1rem;width:130%;height:124%;transform:rotate(-7deg);border-bottom-left-radius:3rem;background:linear-gradient(50deg,#03b8c5,#14148C)!important;position:absolute}}
+.banner-area .e-con-inner{position:relative}
+.img-bx .elementor-image-box-wrapper{display:flex;align-items:center}
+.abt-svg svg{fill:#fff;pointer-events:none;vertical-align:baseline;overflow:unset}
+.agnt svg{fill:#fff}
+
+/* ---- Header / main menu (replaces the Royal Elementor mega menu) ---- */
+.site-header{position:relative;z-index:99}
+.hfe-nav-menu{list-style:none;margin:0;padding:0;display:flex;gap:0}
+.hfe-nav-menu__align-right .hfe-nav-menu{justify-content:flex-end}
+.hfe-nav-menu a{text-decoration:none}
+.univoice-mega{position:static}
+.wpr-nav-menu{list-style:none;margin:0;padding:0;display:flex;justify-content:flex-end;align-items:center}
+.wpr-nav-menu>li{position:relative}
+.wpr-nav-menu .wpr-menu-item{display:flex;align-items:center;gap:6px;padding:14px;color:#fff;text-decoration:none;font-family:"Nunito Sans",Sans-serif;font-size:18px;line-height:1.4;transition:color .2s}
+.wpr-nav-menu .wpr-menu-item:hover,.wpr-nav-menu .wpr-menu-item:focus-visible,.wpr-nav-menu .wpr-menu-item.wpr-active-menu-item{color:#61CE70}
+.wpr-sub-icon{font-size:15px}
+.wpr-sub-mega-menu{position:absolute;top:100%;right:0;width:922px;max-width:calc(100vw - 32px);opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s,transform .2s,visibility .2s;background:#fff;box-shadow:0 12px 40px rgba(15,15,103,.18);border-radius:6px;z-index:100}
+.wpr-mega-menu-true:hover>.wpr-sub-mega-menu,.wpr-mega-menu-true:focus-within>.wpr-sub-mega-menu,.wpr-mega-menu-true.is-open>.wpr-sub-mega-menu{opacity:1;visibility:visible;transform:none}
+.wpr-sub-mega-menu .elementor-icon-list-item a{text-decoration:none}
+.wpr-mobile-toggle-wrap{display:none;text-align:right}
+.wpr-mobile-toggle{display:inline-flex;flex-direction:column;justify-content:center;gap:4px;width:42px;height:38px;padding:6px;background:transparent;border:1px solid #DADADA;border-radius:3px;cursor:pointer}
+.wpr-mobile-toggle-line{display:block;height:3px;background:#DADADA;border-radius:2px}
+@media(max-width:1024px){
+  .wpr-mobile-toggle-wrap{display:block}
+  .univoice-mega .wpr-nav-menu-container{display:none;position:fixed;left:0;right:0;top:var(--menu-top,96px);max-height:calc(100vh - var(--menu-top,96px));overflow-y:auto;background:#0F0F67;padding:8px 16px 16px;z-index:100;box-sizing:border-box}
+  .univoice-mega.menu-open .wpr-nav-menu-container{display:block}
+  .wpr-nav-menu{flex-direction:column;align-items:stretch}
+  .wpr-nav-menu .wpr-menu-item{padding:12px 4px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .wpr-sub-mega-menu{position:static;width:auto;max-width:none;opacity:1;visibility:visible;transform:none;display:none;box-shadow:none;margin:8px 0}
+  .wpr-mega-menu-true.is-open>.wpr-sub-mega-menu{display:block}
+  .wpr-sub-mega-menu .e-con{--padding-left:12px;--padding-right:12px}
+}
+
+/* ---- Contact form (Web3Forms, replaces WPForms) ---- */
+.univoice-form form{display:flex;flex-direction:column;gap:16px;font-family:"Nunito Sans",Sans-serif}
+.univoice-form .uf-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.univoice-form label{display:block;margin:0}
+.univoice-form input,.univoice-form textarea{width:100%;box-sizing:border-box;padding:12px 14px;font:inherit;font-size:16px;color:#444;background:#fff;border:1px solid #ccc;border-radius:0}
+.univoice-form input:focus,.univoice-form textarea:focus{outline:2px solid #14148C;outline-offset:0;border-color:#14148C}
+.univoice-form textarea{min-height:150px;resize:vertical}
+.univoice-form .wpforms-submit{align-self:flex-start;padding:14px 34px;font:inherit;font-size:17px;color:#fff;background:#14148C;border:0;border-radius:0;cursor:pointer}
+.univoice-form .wpforms-submit:hover{background:#0F0F67}
+.univoice-form .uf-hp{display:none}
+@media(max-width:767px){.univoice-form .uf-row{grid-template-columns:1fr}}
+
+/* ---- Data tables (replaces Royal Elementor data table) ---- */
+.wpr-table-container{overflow-x:auto}
+.wpr-data-table{width:100%;border-collapse:collapse;margin:0}
+.wpr-equal-column-width{table-layout:fixed}
+.wpr-table-th,.wpr-table-td{padding:12px 14px;vertical-align:middle}
+@media(max-width:767px){.wpr-data-table{min-width:560px}}
