@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Network and SIP Interconnect Specifications | UniVoice Networks</title>
+<meta name="description" content="UniVoice Networks SIP interconnect specifications: signalling, IP authentication, supported codecs, DTMF, fax, capacity, monitoring and support for wholesale voice customers.">
+<link rel="canonical" href="https://univoicenetworks.com/network/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UniVoice Networks">
+<meta property="og:title" content="Network and SIP Interconnect Specifications | UniVoice Networks">
+<meta property="og:description" content="UniVoice Networks SIP interconnect specifications: signalling, IP authentication, supported codecs, DTMF, fax, capacity, monitoring and support for wholesale voice customers.">
+<meta property="og:url" content="https://univoicenetworks.com/network/">
+<meta property="og:image" content="https://univoicenetworks.com/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#13294B">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://univoicenetworks.com/#org", "name": "UniVoice Networks LLC", "alternateName": "UniVoice Networks", "url": "https://univoicenetworks.com/", "logo": "https://univoicenetworks.com/assets/img/univoice-logo.png", "email": "sales@univoicenetworks.com", "telephone": "+13073964620", "address": {"@type": "PostalAddress", "streetAddress": "100 Church Street, Suite 800", "addressLocality": "New York", "addressRegion": "NY", "postalCode": "10007", "addressCountry": "US"}, "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "email": "sales@univoicenetworks.com", "telephone": "+13073964620", "areaServed": "US"}, {"@type": "ContactPoint", "contactType": "technical support", "email": "support@univoicenetworks.com", "telephone": "+13073964620"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://univoicenetworks.com/"}, {"@type": "ListItem", "position": 2, "name": "Network and interconnect", "item": "https://univoicenetworks.com/network/"}]}</script>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap head-row">
+<a class="brand" href="/" aria-label="UniVoice Networks home"><img src="/assets/img/univoice-logo.png" alt="" width="44" height="44"><span>UniVoice<b>Networks</b></span></a>
+<nav class="main-nav" id="mainnav" aria-label="Main"><ul><li class="has-sub"><button class="nav-btn" aria-expanded="false" aria-controls="sub0">Voice<svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><ul class="sub" id="sub0"><li><a href="/usa-call-center-routes/">USA call center routes</a></li><li><a href="/usa-conversational-routes/">USA conversational routes</a></li><li><a href="/wholesale-termination-services/">Wholesale termination</a></li><li><a href="/toll-free-services/">Toll-free origination</a></li><li><a href="/toll-free-termination/">Toll-free termination</a></li><li><a href="/did-services/">DID numbers</a></li></ul></li><li><a href="/wholesale-sms/">Messaging</a></li><li class="has-sub"><button class="nav-btn" aria-expanded="false" aria-controls="sub2">Solutions<svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button><ul class="sub" id="sub2"><li><a href="/auto-dialer/">Auto dialer</a></li><li><a href="/pbx-solution/">Cloud PBX</a></li></ul></li><li><a href="/network/">Network</a></li><li><a href="/compliance/">Compliance</a></li><li><a href="/about/">About</a></li></ul>
+<a class="btn btn-primary nav-cta" href="/carrier-onboarding/">Request interconnect</a></nav>
+<button class="menu-toggle" aria-expanded="false" aria-controls="mainnav"><span class="sr">Menu</span><span class="bars" aria-hidden="true"></span></button>
+</div></header>
+<main id="main"><section class="page-head"><div class="wrap">
+<ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li aria-current="page">Network and interconnect</li></ol>
+<h1>Network and interconnect</h1><p class="lede">How to connect to UniVoice Networks: SIP signalling, authentication, codecs and the operational practices behind our routes.</p>
+
+</div></section>
+<div class="wrap page-body"><article class="prose">
+<h2>Interconnect specifications</h2>
+<table class="spec"><tbody><tr><th scope="row">Protocol</th><td>SIP (RFC 3261) over UDP or TCP</td></tr><tr><th scope="row">Authentication</th><td>Source IP address; digest authentication available for selected products</td></tr><tr><th scope="row">Number format</th><td>E.164; US numbers as 1 + 10 digits</td></tr><tr><th scope="row">Codecs</th><td>G.711 µ-law, G.711 A-law, G.729</td></tr><tr><th scope="row">DTMF</th><td>RFC 2833 / RFC 4733</td></tr><tr><th scope="row">Capacity</th><td>Concurrent-call and calls-per-second limits set per account</td></tr><tr><th scope="row">Caller ID</th><td>Passed as sent when the customer is authorised to use the number</td></tr></tbody></table>
+
+<h2>How we run the network</h2>
+<dl class="rows"><div><dt>Traffic monitoring</dt><dd>ASR, ACD, short-duration ratio and post-dial delay are tracked per customer and per route.</dd></div><div><dt>Anomaly response</dt><dd>Unusual patterns — sudden volume spikes, very short calls, invalid caller ID — are investigated and can be suspended while we review them.</dd></div><div><dt>Fraud controls</dt><dd>Spending limits, destination restrictions and alerts protect customers from compromised systems.</dd></div><div><dt>Change control</dt><dd>Route and rate changes are communicated in advance, as your agreement sets out.</dd></div></dl>
+
+<h2>Getting connected</h2>
+<p>Once your account passes <a href="/carrier-onboarding/">onboarding</a>, we exchange technical details: your signalling IP addresses, our gateway addresses, any technical prefix and your capacity limits. Test calls are completed before live traffic starts.</p>
+</article><aside class="side"><div class="side-box"><h2>At a glance</h2><dl class="rows"><div><dt>Need our IPs?</dt><dd>Gateway addresses are shared with approved customers during onboarding.</dd></div><div><dt>Support</dt><dd><a href="mailto:support@univoicenetworks.com">support@univoicenetworks.com</a><br>+1 (307) 396-4620</dd></div></dl></div><nav class="related" aria-label="Related pages"><h2>Related</h2><ul><li><a href="/carrier-onboarding/">Carrier onboarding</a></li><li><a href="/wholesale-termination-services/">Wholesale termination</a></li></ul></nav></aside></div>
+<section class="cta"><div class="wrap"><div><h2>Ready to interconnect?</h2><p>Send us your company details and traffic profile. Our team reviews every request and replies by email.</p></div><div class="cta-actions"><a class="btn btn-light" href="/carrier-onboarding/">Request interconnect</a><a class="btn btn-ghost-light" href="/contact-us/">Talk to sales</a></div></div></section></main>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div class="foot-co"><p class="foot-name">UniVoice Networks LLC</p>
+<address>100 Church Street, Suite 800<br>New York, NY 10007, USA<br><a href="tel:+13073964620">+1 (307) 396-4620</a><br>
+Sales: <a href="mailto:sales@univoicenetworks.com">sales@univoicenetworks.com</a><br>Support: <a href="mailto:support@univoicenetworks.com">support@univoicenetworks.com</a></address></div>
+<div><h2>Voice</h2><ul><li><a href="/usa-call-center-routes/">USA call center routes</a></li><li><a href="/usa-conversational-routes/">USA conversational routes</a></li><li><a href="/wholesale-termination-services/">Wholesale termination</a></li><li><a href="/toll-free-services/">Toll-free origination</a></li><li><a href="/toll-free-termination/">Toll-free termination</a></li><li><a href="/did-services/">DID numbers</a></li></ul></div><div><h2>Company</h2><ul><li><a href="/about/">About</a></li><li><a href="/network/">Network</a></li><li><a href="/wholesale-sms/">Wholesale SMS</a></li><li><a href="/auto-dialer/">Auto dialer</a></li><li><a href="/pbx-solution/">Cloud PBX</a></li><li><a href="/carrier-onboarding/">Carrier onboarding</a></li><li><a href="/contact-us/">Contact</a></li></ul></div><div><h2>Compliance</h2><ul><li><a href="/compliance/">Compliance overview</a></li><li><a href="/robocall-mitigation/">Robocall mitigation program</a></li><li><a href="/acceptable-use-policy/">Acceptable use policy</a></li><li><a href="/law-enforcement/">Law enforcement requests</a></li><li><a href="/privacy-policy/">Privacy policy</a></li><li><a href="/terms-of-service/">Terms of service</a></li></ul></div></div>
+<div class="foot-reg"><span>FCC FRN 0037476215</span><span>Form 499 Filer ID 838144</span><span>OCN 137M</span><span>Organised in New York</span></div>
+<p class="copy">© 2026 UniVoice Networks LLC. All rights reserved.</p>
+</div></footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
